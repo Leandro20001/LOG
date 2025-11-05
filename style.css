@@ -1,0 +1,184 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    background: url('https://images.alphacoders.com/876/thumb-1920-876316.jpg') center/cover no-repeat;
+    color: white;
+    height: 100vh;
+}
+
+.menu {
+    display: flex;
+    align-items: center;
+    padding: 10px 20px;
+    background: rgba(0, 0, 0, 0.6);
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+.menu-btn {
+    font-size: 24px;
+    margin-right: 10px;
+}
+
+.menu h1 {
+    flex: 1;
+    text-align: center;
+    font-size: 20px;
+}
+
+.tela {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.hidden {
+    display: none;
+}
+
+/* --- CARD PADRÃO --- */
+.card {
+    background: #c45d5d;
+    padding: 40px 30px;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+    text-align: center;
+    width: 280px;
+}
+
+.card form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.card label {
+    text-align: left;
+    font-size: 14px;
+}
+
+.card input {
+    padding: 8px;
+    border: none;
+    border-radius: 6px;
+    outline: none;
+}
+
+.card button {
+    background: white;
+    color: #c45d5d;
+    border: none;
+    border-radius: 8px;
+    padding: 10px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.card button:hover {
+    background: #f2f2f2;
+}
+
+.logo {
+    font-size: 30px;
+    margin-bottom: 15px;
+}
+
+/* --- LOJA --- */
+.loja {
+    background: #c45d5d;
+    margin: 100px auto;
+    border-radius: 10px;
+    padding: 20px;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 15px;
+    width: 90%;
+}
+
+.jogo {
+    width: 150px;
+    text-align: center;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.jogo:hover {
+    transform: scale(1.05);
+}
+
+.jogo img {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 5px;
+}
+
+.preco {
+    font-weight: bold;
+    background: rgba(0,0,0,0.3);
+    padding: 5px;
+    border-radius: 5px;
+}
+
+/* --- DETALHE DO JOGO --- */
+.detalhe-card {
+    background: #c45d5d;
+    border-radius: 10px;
+    width: 90%;
+    max-width: 700px;
+    padding: 20px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+    text-align: center;
+}
+
+.banner {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.add-btn {
+    background: #32a852;
+    color: black;
+    font-weight: bold;
+    border-radius: 8px;
+    padding: 8px 15px;
+    display: inline-block;
+    margin-top: 10px;
+}
+
+.screenshots {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+    gap: 10px;
+}
+
+.screenshots img {
+    width: 30%;
+    border-radius: 10px;
+}
+
+.detalhe-card p {
+    margin-top: 15px;
+    font-size: 14px;
+    text-align: justify;
+}
+
+.detalhe-card button {
+    background: white;
+    color: #c45d5d;
+    border: none;
+    border-radius: 8px;
+    padding: 10px 20px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 15px;
+}
