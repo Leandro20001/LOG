@@ -34,9 +34,10 @@ body {
 
 .tela {
     display: flex;
+    margin-top: 60px;
     align-items: center;
     justify-content: center;
-    height: 100vh;
+
 }
 
 .hidden {
@@ -50,7 +51,13 @@ body {
     border-radius: 15px;
     box-shadow: 0 4px 10px rgba(0,0,0,0.3);
     text-align: center;
+    justify-content: center;
+    align-content: center;
     width: 280px;
+    height: 500px;
+}
+.card button{
+
 }
 
 .card form {
@@ -66,6 +73,7 @@ body {
 
 .card input {
     padding: 8px;
+    
     border: none;
     border-radius: 6px;
     outline: none;
@@ -73,6 +81,7 @@ body {
 
 .card button {
     background: white;
+    margin: 20px;
     color: #c45d5d;
     border: none;
     border-radius: 8px;
@@ -89,7 +98,18 @@ body {
 .logo {
     font-size: 30px;
     margin-bottom: 15px;
+    background-image: url('LOG.png');
 }
+#profile{
+    width: 72px;
+    height: 72px;
+    transform: translate(+20px, +20px);
+    position: absolute;
+    background-image: url('eu.jpg');
+    background-size: contain;
+    border-radius: 50%;
+}
+
 
 /* --- LOJA --- */
 .loja {
@@ -103,11 +123,31 @@ body {
     gap: 15px;
     width: 90%;
 }
+#search{
+    justify-content: center;
+    text-align: center;
+    align-content: center;
+    width: 88%;
+    display: block;
+    position: absolute;
+    transform: translate(+110px, +180px);
+    margin: auto;
+    height: 80px;
+    background-image: url("back.jpg");
+}
+#search input{
+    box-sizing: border-box;
+    padding: 0px 12px 0px 12px;
+
+    width: 90%;
+    height: 40px;
+}
 
 .jogo {
-    width: 150px;
+    width: 220px;
     text-align: center;
     cursor: pointer;
+    justify-content: center;
     transition: 0.3s;
 }
 
@@ -116,7 +156,8 @@ body {
 }
 
 .jogo img {
-    width: 100%;
+    width: 220px;
+    height: 320px;
     border-radius: 10px;
     margin-bottom: 5px;
 }
@@ -125,6 +166,8 @@ body {
     font-weight: bold;
     background: rgba(0,0,0,0.3);
     padding: 5px;
+    text-align: center;
+    margin: auto;
     border-radius: 5px;
 }
 
@@ -132,32 +175,48 @@ body {
 .detalhe-card {
     background: #c45d5d;
     border-radius: 10px;
-    width: 90%;
-    max-width: 700px;
+    height: fit-content;
+    width:80%;
     padding: 20px;
     box-shadow: 0 4px 10px rgba(0,0,0,0.3);
     text-align: center;
 }
 
+
+
 .banner {
     width: 100%;
+    height:fit-content;
+    background-clip: border-box;
+    max-width: 1200px;
     border-radius: 10px;
 }
 
 .add-btn {
     background: #32a852;
-    color: black;
+    color: rgb(255, 255, 255)(55, 255, 255);
     font-weight: bold;
+    font-size: 20px;
     border-radius: 8px;
-    padding: 8px 15px;
+    padding:24px 60px;
     display: inline-block;
+    position: absolute;
+    transform: translate(-100px, 590px);
     margin-top: 10px;
+}
+
+#criadaconta{
+    padding: 24px;
+}
+
+#loginbtn{
+    margin: 40px!important;
 }
 
 .screenshots {
     display: flex;
     justify-content: space-around;
-    margin-top: 20px;
+    margin-top: 40px;
     gap: 10px;
 }
 
@@ -167,9 +226,12 @@ body {
 }
 
 .detalhe-card p {
-    margin-top: 15px;
+    margin:30px auto;
+    line-height: 24px;
+    font-weight: 700;
+    width: 800px;
     font-size: 14px;
-    text-align: justify;
+    text-align: center;
 }
 
 .detalhe-card button {

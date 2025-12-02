@@ -7,15 +7,13 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header class="menu">
-        <div class="menu-btn">☰</div>
-        <h1>LOG</h1>
-    </header>
+    <div id="profile"></div>
+
 
     <!-- Tela de Login -->
     <section class="tela" id="loginTela">
         <div class="card">
-            <div class="logo">🎮<h2>LOG</h2></div>
+            <div class="logo"><h2>LOG</h2></div>
             <form>
                 <label>Email</label>
                 <input type="email" placeholder="Digite seu email">
@@ -38,25 +36,27 @@
     </section>
 
     <!-- Tela da Loja -->
+ 
     <section class="tela hidden" id="lojaTela">
+
         <div class="loja">
             <div class="jogo" onclick="abrirDetalhe('hollow')">
-                <img src="https://cdn.cloudflare.steamstatic.com/steam/apps/367520/header.jpg" alt="Hollow Knight">
-                <div class="preco">R$46,99 🛒</div>
+                <img src="hollow.webp" alt="Hollow Knight">
+                <div class="preco">R$46,99 </div>
             </div>
 
             <div class="jogo" onclick="abrirDetalhe('celeste')">
-                <img src="https://cdn.cloudflare.steamstatic.com/steam/apps/504230/header.jpg" alt="Celeste">
+                <img src="celeste.png" alt="Celeste">
                 <div class="preco">R$41,99 🛒</div>
             </div>
 
             <div class="jogo" onclick="abrirDetalhe('omori')">
-                <img src="https://cdn.cloudflare.steamstatic.com/steam/apps/1150690/header.jpg" alt="Omori">
+                <img src="omori.jpeg" alt="Omori">
                 <div class="preco">R$59,99 🛒</div>
             </div>
 
             <div class="jogo" onclick="abrirDetalhe('stardew')">
-                <img src="https://cdn.cloudflare.steamstatic.com/steam/apps/413150/header.jpg" alt="Stardew Valley">
+                <img src="star.924253ef-36b2-4cc0-8bb1-9a97c88d4828" alt="Stardew Valley">
                 <div class="preco">R$22,99 🛒</div>
             </div>
         </div>
@@ -88,33 +88,16 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header class="menu">
-        <div class="menu-btn">☰</div>
-        <h1>LOG</h1>
-    </header>
+   
 
     <!-- Tela de Login -->
-    <section class="tela" id="loginTela">
-        <div class="card">
-            <div class="logo">🎮<h2>LOG</h2></div>
-            <form>
-                <label>Email</label>
-                <input type="email" placeholder="Digite seu email">
-                <label>Senha</label>
-                <input type="password" placeholder="Digite sua senha">
-                <label>Confirmar senha</label>
-                <input type="password" placeholder="Confirme sua senha">
-                <button type="button" onclick="irPara('contaTela')">Criar conta</button>
-            </form>
-        </div>
-    </section>
-
+   
     <!-- Tela de Conta Criada -->
     <section class="tela hidden" id="contaTela">
         <div class="card">
             <div class="logo">🎮<h2>LOG</h2></div>
-            <p>Conta Criada!</p>z
-            <button onclick="irPara('lojaTela')">Voltar para o Login</button>
+            <p id="criadaconta">Conta Criada!</p>z
+            <button id="loginbtn" onclick="irPara('lojaTela')">Voltar para o Login</button>
         </div>
     </section>
 
@@ -122,8 +105,8 @@
     <section class="tela hidden" id="lojaTela">
         <div class="loja">
             <div class="jogo" onclick="abrirDetalhe('hollow')">
-                <img src="https://cdn.cloudflare.steamstatic.com/steam/apps/367520/header.jpg" alt="Hollow Knight">
-                <div class="preco">R$46,99 🛒</div>
+                <img src="hollow.webp" alt="Hollow Knight">
+                <div class="preco">R$46,99</div>
             </div>
 
             <div class="jogo" onclick="abrirDetalhe('celeste')">
